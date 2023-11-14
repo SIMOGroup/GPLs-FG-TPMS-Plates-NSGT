@@ -1,0 +1,34 @@
+function plotNURBS_surf(p,q,U,V,CP)
+
+b_net(:,:,1)=CP(:,:,1);
+b_net(:,:,2)=CP(:,:,2);
+b_net(:,:,3)=CP(:,:,4);
+mcp = length(b_net(:,1,1));
+ncp = length(b_net(1,:,1));
+
+gcoord(:,1)=reshape(b_net(:,:,1),mcp*ncp,1);
+gcoord(:,2)=reshape(b_net(:,:,2),mcp*ncp,1);
+gcoord(:,3)=reshape(b_net(:,:,3),mcp*ncp,1);
+
+clear b_net
+
+gcoord=[gcoord(:,1)';gcoord(:,2)'; gcoord(:,3)'];
+
+icount=0;
+for j = 1:ncp
+      for i = 1:mcp
+          icount = icount + 1;
+            b_net(:,i,j) = gcoord(:,icount);
+      end
+end  
+
+srf = nrbmak(b_net,{U V});
+nrbctrlplot(srf);
+figure('color',[1 1 1])
+view(2
+hold on
+%figure
+nrbkntplot(srf);
+%nrbplot(srf,[13 5])
+
+view(2)
