@@ -3,7 +3,7 @@ This repository provides the basic source code of the investigation on the behav
 - Integrating nonlocal elasticity and strain gradient effects;
 - Combining three TPMS architectures with two porosity distribution patterns and three GPLs distribution patterns;
 - Seven-variable plate model, higher-order shear deformation theory, isogeometric analysis; 
-- Static bending, free vibration and dynamic in-plane compressive responses.
+- Static bending and free vibration responses.
 
 # Contributors
 - Nam V. Nguyen
@@ -12,4 +12,4 @@ This repository provides the basic source code of the investigation on the behav
 - Hung Nguyen-Xuan
 
 # References
-N. V. Nguyen, K. Q. Tran, J. Lee, H. Nguyen-Xuan, Nonlocal strain gradient-based isogeometric analysis of graphene platelets-reinforced functionally graded triply periodic minimal surface nanoplates (2023, Revision)
+N. V. Nguyen, K. Q. Tran, J. Lee, H. Nguyen-Xuan, Nonlocal strain gradient-based isogeometric analysis of graphene platelets-reinforced functionally graded triply periodic minimal surface nanoplates, Applied Mathematics and Computation 466 (2024) 128461. (https://doi.org/10.1016/j.amc.2023.128461)
